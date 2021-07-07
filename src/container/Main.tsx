@@ -1,5 +1,5 @@
 import React from 'react';
-import TopSection from '../component/main/topSection/TopSection';
+import TopSection from '../components/main/topSection/TopSection';
 import JobList from './JobList';
 
 
