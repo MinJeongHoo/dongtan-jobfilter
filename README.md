@@ -1,25 +1,15 @@
-# New Project
+# 동탄 직업 리스트 프로젝트
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+## 1. State관리 방식
+-- Recoil로 작업
+## 2. 폴더구조
 
-## Available Scripts
+-- Component, Container, Moduels로 구분 
+  - Component 역할은 View역할
+  - Container 역할은 State,Props 전달 및 이벤트 헨들링
 
-### npm start
+## 3. CSS적용
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+-- PostCss로 작업 할 예정 
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### npm run build
-
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" to your `snowpack.config.mjs` config file.
-
-### npm test
-
-Launches the application test runner.
-Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
+이유 : React에서 Component별 Css관리가 나한테는 너무 편해서 ㅎㅎㅎ
