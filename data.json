@@ -1,11 +1,10 @@
-
 {
-  "getJob":[
+  "getJob": [
     {
       "id": 1,
       "company": "Photosnap",
-      "logo": "./images/photosnap.svg",
-      "new": true,
+      "logo": "../../../../../dist/images/photosnap.svg",
+      "newOccur": true,
       "featured": true,
       "position": "Senior Frontend Developer",
       "role": "Frontend",
@@ -13,15 +12,25 @@
       "postedAt": "1d ago",
       "contract": "Full Time",
       "location": "USA Only",
-      "languages": ["HTML", "CSS", "JavaScript"],
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "tools": [],
-      "filterList":["Frontend","Senior","HTML","CSS","JavaScript"]
+      "filterList": [
+        "Frontend",
+        "Senior",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
     },
     {
       "id": 2,
       "company": "Manage",
-      "logo": "./images/manage.svg",
-      "new": true,
+      "logo": "../../../../../dist/images/manage.svg",
+      "newOccur": true,
       "featured": true,
       "position": "Fullstack Developer",
       "role": "Fullstack",
@@ -29,15 +38,24 @@
       "postedAt": "1d ago",
       "contract": "Part Time",
       "location": "Remote",
-      "languages": ["Python"],
-      "tools": ["React"],
-      "filterList":["Fullstack","Midweight","Python","React"]
+      "languages": [
+        "Python"
+      ],
+      "tools": [
+        "React"
+      ],
+      "filterList": [
+        "Fullstack",
+        "Midweight",
+        "Python",
+        "React"
+      ]
     },
     {
       "id": 3,
       "company": "Account",
-      "logo": "./images/account.svg",
-      "new": true,
+      "logo": "../../../../../dist/images/account.svg",
+      "newOccur": true,
       "featured": false,
       "position": "Junior Frontend Developer",
       "role": "Frontend",
@@ -45,15 +63,26 @@
       "postedAt": "2d ago",
       "contract": "Part Time",
       "location": "USA Only",
-      "languages": ["JavaScript"],
-      "tools": ["React", "Sass"],
-      "filterList":["Frontend","Junior","JavaScript","React","Sass"]
+      "languages": [
+        "JavaScript"
+      ],
+      "tools": [
+        "React",
+        "Sass"
+      ],
+      "filterList": [
+        "Frontend",
+        "Junior",
+        "JavaScript",
+        "React",
+        "Sass"
+      ]
     },
     {
       "id": 4,
       "company": "MyHome",
-      "logo": "./images/myhome.svg",
-      "new": false,
+      "logo": "../../../../../dist/images/myhome.svg",
+      "newOccur": false,
       "featured": false,
       "position": "Junior Frontend Developer",
       "role": "Frontend",
@@ -61,15 +90,23 @@
       "postedAt": "5d ago",
       "contract": "Contract",
       "location": "USA Only",
-      "languages": ["CSS", "JavaScript"],
+      "languages": [
+        "CSS",
+        "JavaScript"
+      ],
       "tools": [],
-      "filterList":["Frontend","Junior","CSS","JavaScript"]
+      "filterList": [
+        "Frontend",
+        "Junior",
+        "CSS",
+        "JavaScript"
+      ]
     },
     {
       "id": 5,
       "company": "Loop Studios",
-      "logo": "./images/loop-studios.svg",
-      "new": false,
+      "logo": "../../../../../dist/images/loop-studios.svg",
+      "newOccur": false,
       "featured": false,
       "position": "Software Engineer",
       "role": "Fullstack",
@@ -77,15 +114,26 @@
       "postedAt": "1w ago",
       "contract": "Full Time",
       "location": "Worldwide",
-      "languages": ["JavaScript"],
-      "tools": ["Ruby", "Sass"],
-      "filterList":["Fullstack","Midweight","JavaScript","Ruby","Sass"]
+      "languages": [
+        "JavaScript"
+      ],
+      "tools": [
+        "Ruby",
+        "Sass"
+      ],
+      "filterList": [
+        "Fullstack",
+        "Midweight",
+        "JavaScript",
+        "Ruby",
+        "Sass"
+      ]
     },
     {
       "id": 6,
       "company": "FaceIt",
-      "logo": "./images/faceit.svg",
-      "new": false,
+      "logo": "../../../../../dist/images/faceit.svg",
+      "newOccur": false,
       "featured": false,
       "position": "Junior Backend Developer",
       "role": "Backend",
@@ -93,15 +141,24 @@
       "postedAt": "2w ago",
       "contract": "Full Time",
       "location": "UK Only",
-      "languages": ["Ruby"],
-      "tools": ["RoR"],
-      "filterList":["Backend","Junior","Ruby","RoR"]
+      "languages": [
+        "Ruby"
+      ],
+      "tools": [
+        "RoR"
+      ],
+      "filterList": [
+        "Backend",
+        "Junior",
+        "Ruby",
+        "RoR"
+      ]
     },
     {
       "id": 7,
       "company": "Shortly",
-      "logo": "./images/shortly.svg",
-      "new": false,
+      "logo": "../../../../../dist/images/shortly.svg",
+      "newOccur": false,
       "featured": false,
       "position": "Junior Developer",
       "role": "Frontend",
@@ -109,15 +166,26 @@
       "postedAt": "2w ago",
       "contract": "Full Time",
       "location": "Worldwide",
-      "languages": ["HTML", "JavaScript"],
-      "tools": ["Sass"],
-      "filterList":["Frontend","Junior","HTML","Sass","JavaScript"]
+      "languages": [
+        "HTML",
+        "JavaScript"
+      ],
+      "tools": [
+        "Sass"
+      ],
+      "filterList": [
+        "Frontend",
+        "Junior",
+        "HTML",
+        "Sass",
+        "JavaScript"
+      ]
     },
     {
       "id": 8,
       "company": "Insure",
-      "logo": "./images/insure.svg",
-      "new": false,
+      "logo": "../../../../../dist/images/insure.svg",
+      "newOccur": false,
       "featured": false,
       "position": "Junior Frontend Developer",
       "role": "Frontend",
@@ -125,15 +193,26 @@
       "postedAt": "2w ago",
       "contract": "Full Time",
       "location": "USA Only",
-      "languages": ["JavaScript"],
-      "tools": ["Vue", "Sass"],
-      "filterList":["Frontend","Junior","Vue","Sass","JavaScript"]
+      "languages": [
+        "JavaScript"
+      ],
+      "tools": [
+        "Vue",
+        "Sass"
+      ],
+      "filterList": [
+        "Frontend",
+        "Junior",
+        "Vue",
+        "Sass",
+        "JavaScript"
+      ]
     },
     {
       "id": 9,
       "company": "Eyecam Co.",
-      "logo": "./images/eyecam-co.svg",
-      "new": false,
+      "logo": "../../../../../dist/images/eyecam-co.svg",
+      "newOccur": false,
       "featured": false,
       "position": "Full Stack Engineer",
       "role": "Fullstack",
@@ -141,15 +220,26 @@
       "postedAt": "3w ago",
       "contract": "Full Time",
       "location": "Worldwide",
-      "languages": ["JavaScript", "Python"],
-      "tools": ["Django"],
-      "filterList":["Fullstack","Midweight","JavaScript","Python","Django"]
+      "languages": [
+        "JavaScript",
+        "Python"
+      ],
+      "tools": [
+        "Django"
+      ],
+      "filterList": [
+        "Fullstack",
+        "Midweight",
+        "JavaScript",
+        "Python",
+        "Django"
+      ]
     },
     {
       "id": 10,
       "company": "The Air Filter Company",
-      "logo": "./images/the-air-filter-company.svg",
-      "new": false,
+      "logo": "../../../../../dist/images/the-air-filter-company.svg",
+      "newOccur": false,
       "featured": false,
       "position": "Front-end Dev",
       "role": "Frontend",
@@ -157,9 +247,20 @@
       "postedAt": "1mo ago",
       "contract": "Part Time",
       "location": "Worldwide",
-      "languages": ["JavaScript"],
-      "tools": ["React", "Sass"],
-      "filterList":["Frontend","Junior","React","Sass","JavaScript"]
+      "languages": [
+        "JavaScript"
+      ],
+      "tools": [
+        "React",
+        "Sass"
+      ],
+      "filterList": [
+        "Frontend",
+        "Junior",
+        "React",
+        "Sass",
+        "JavaScript"
+      ]
     }
   ]
 }

@@ -1,6 +1,10 @@
 import React from 'react';
 
-const SkillInfo = () => {
+type SkillType = {
+  filterList: Array<string>
+}
+
+const SkillInfo = ({ filterList }: SkillType) => {
   return (
     <div>
       <p>Frontend</p>

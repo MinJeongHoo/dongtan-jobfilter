@@ -1,24 +1,36 @@
 import React from 'react';
+type JobType = {
+  jobInfo: {
+    company: string,
+    logo: string,
+    newOccur: boolean,
+    featured: boolean,
+    position: string,
+    postedAt: string,
+    contract: string,
+    location: string
+  }
+}
 
-const JobInfo = () => {
+const JobInfo = ({ jobInfo: { company, logo, newOccur, featured, position, postedAt, contract, location } }: JobType) => {
   return (
     <div>
-      <img src='./'></img>
+      <img src={`${logo}`}></img>
       <div>
         <div>
-          <p>Photosnap</p>
-          <p>NEW</p>
-          <p>FEATURED</p>
+          <p>{company}</p>
+          {newOccur && <p>New</p>}
+          {featured && <p>FEATURED</p>}
         </div>
-        <h1>Senior Frontend Devloper</h1>
+        <h1>{position}</h1>
         <div>
-          <p>1d ago</p>
-          <p>Full Time</p>
-          <p>USA Only</p>
+          <p>{postedAt}</p>
+          <p>{contract}</p>
+          <p>{location}</p>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
-      
+
 export default JobInfo;
