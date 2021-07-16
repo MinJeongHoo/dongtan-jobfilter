@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Main from './container/Main';
+import Main from './components/main/MainContainer';
 
 
 
 
 function App() {
   return (
-    <Main/>
+    <Main />
   );
 }
 export default App;
