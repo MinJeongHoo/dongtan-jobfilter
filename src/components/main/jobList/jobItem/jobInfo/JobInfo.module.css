@@ -27,3 +27,25 @@
 h1,p{
     margin: 0 0 0.5rem 0;
 }
+
+
+
+@media screen and (max-width: 1000px) {
+ 
+    .logoSection{
+        position: absolute;
+        top : -50px;
+    }
+    .jobInfo{
+        margin:2rem 0;
+    }
+  } 
+
+  @media screen and (max-width: 500px) {
+    .jobInfoSection{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+    }
+    
+  } 

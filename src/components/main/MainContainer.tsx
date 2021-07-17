@@ -6,9 +6,13 @@ import LoadingSpinner from '../loadingSpiner/LoadingSpinner';
 
 const MainContainer = () => {
 
+  const style : React.CSSProperties = {
+    overflowX :'hidden'
+  }
+
   return (
     <RecoilRoot>
-      <div>
+      <div style={style}>
         <TopSection />
         <Suspense fallback={<LoadingSpinner/>}>
           <JobList />

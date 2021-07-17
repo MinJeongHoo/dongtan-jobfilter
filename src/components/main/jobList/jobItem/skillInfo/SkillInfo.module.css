@@ -17,3 +17,13 @@
     cursor: pointer;
     background-color: lightgreen;
 }
+@media screen and (max-width: 500px) {
+    .skillSection{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .skillText{
+        text-align: center;
+    }
+    
+  } 
