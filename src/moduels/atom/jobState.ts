@@ -3,9 +3,7 @@ import { atom } from 'recoil';
 
 export const selectedSkillList = atom({
   key: 'selectedSkillList',
-  default: {
-    data: []
-  }
+  default: []
 })
 
 export const jobListState = atom({
