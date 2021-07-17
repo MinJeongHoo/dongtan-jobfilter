@@ -1,17 +1,20 @@
 import React from 'react';
+import styles from './SkillInfo.module.css';
 
 type SkillType = {
   filterList: Array<string>
 }
 
+const test = (event : React.DOMAttributes<HTMLParagraphElement>)=> {
+  console.log(event.target.innerText);
+}
+
 const SkillInfo = ({ filterList }: SkillType) => {
   return (
-    <div>
-      <p>Frontend</p>
-      <p>Senior</p>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>Javascript</p>
+    <div className={styles.skillSection}>
+      {filterList.map((text,idx)=>{
+        return <p key ={idx} className={styles.skillText} onClick={test}>{text}</p>
+      })}
     </div>
   )
 };

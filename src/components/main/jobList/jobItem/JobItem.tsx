@@ -1,6 +1,7 @@
 import React from 'react';
 import JobInfo from './jobInfo/JobInfo';
 import SkillInfo from './skillInfo/SkillInfo';
+import styles from './JobItem.module.css';
 
 type ItemType = {
   item: {
@@ -17,11 +18,13 @@ type ItemType = {
 
 };
 
-const JobItem = ({ item }: ItemType) => (
-  <section>
-    <JobInfo jobInfo={item} />
-    <SkillInfo filterList={item.filterList} />
-  </section>
-);
+const JobItem = ({ item }: ItemType) => {
+  return(
+    <section className={styles.jobSection}>
+      <JobInfo jobInfo={item} />
+      <SkillInfo filterList={item.filterList} />
+    </section>
+  )
+};
 
 export default JobItem;

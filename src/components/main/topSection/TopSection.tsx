@@ -1,10 +1,9 @@
 import React from 'react';
+import styles from './TopSection.module.css';
 
 const TopSection = () => {
   return (
-    <section>
-      <div>Top Area</div>
-    </section>
+    <section className={styles.topArea}/>
   )
 };
 

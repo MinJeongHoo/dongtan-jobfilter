@@ -1,0 +1,12 @@
+.skillSection{
+    display: flex;
+    align-items: center;
+}
+
+.skillText{
+    margin : 0.7rem;
+}
+
+.skillText:hover{
+    cursor: pointer;
+}

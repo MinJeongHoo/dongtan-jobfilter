@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './JobInfo.module.css';
 type JobType = {
   jobInfo: {
     company: string,
@@ -14,19 +15,19 @@ type JobType = {
 
 const JobInfo = ({ jobInfo: { company, logo, newOccur, featured, position, postedAt, contract, location } }: JobType) => {
   return (
-    <div>
-      <img src={`${logo}`}></img>
-      <div>
-        <div>
-          <p>{company}</p>
-          {newOccur && <p>New</p>}
-          {featured && <p>FEATURED</p>}
+    <div className = {styles.jobInfoSection}>
+      <img src={`${logo}`} className={styles.logoSection}></img>
+      <div className = {styles.jobInfo}>
+        <div className = {styles.companyInfo}> 
+          <p className={styles.detailText}>{company}</p>
+          {newOccur && <p className={styles.detailText}>New</p>}
+          {featured && <p className={styles.detailText}>FEATURED</p>}
         </div>
         <h1>{position}</h1>
-        <div>
-          <p>{postedAt}</p>
-          <p>{contract}</p>
-          <p>{location}</p>
+        <div className = {styles.detailInfo}>
+          <p className = {styles.detailText}>{postedAt}</p>
+          <p className = {styles.detailText}>{contract}</p>
+          <p className = {styles.detailText}>{location}</p>
         </div>
       </div>
     </div >
