@@ -15,4 +15,5 @@
 
 .skillText:hover{
     cursor: pointer;
+    background-color: lightgreen;
 }

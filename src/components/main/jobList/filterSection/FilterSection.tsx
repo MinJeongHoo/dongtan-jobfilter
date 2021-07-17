@@ -15,7 +15,7 @@ const FilterSection = ({selectedList}:SelectedListType) => {
     const removeFilterValue=(event : React.MouseEvent<HTMLButtonElement>)=>{
         const target :HTMLInputElement = event.target;
         const filterName = target.parentNode.getAttribute("id");
-        console.log(filterName);
+        //console.log(filterName);
         const newSelectedList = selectedList.filter(value=>{
             return value!==filterName;
           });
