@@ -1,0 +1,29 @@
+.jobInfoSection{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.logoSection{
+    width: 5rem;
+    height : 5rem;
+}
+
+.jobInfo{
+    margin-left: 3rem;
+}
+
+.companyInfo {
+    display: flex;
+}
+
+.detailInfo {
+    display: flex;
+}
+.detailText{
+    margin-right: 1rem;
+}
+
+h1,p{
+    margin: 0 0 0.5rem 0;
+}

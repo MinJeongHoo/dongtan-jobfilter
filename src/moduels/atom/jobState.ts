@@ -1,14 +1,15 @@
 import { atom } from 'recoil';
 
 
-export const selectedSkillList = atom({
+type SelectedListType = Array<string>
+type JobListType<T> = Array<T>;
+
+export const selectedSkillList = atom<SelectedListType>({
   key: 'selectedSkillList',
-  default: {
-    data: []
-  }
+  default: []
 })
 
-export const jobListState = atom({
+export const jobListState = atom<JobListType<string>>({
   key: 'jobListState',
   default: []
 });

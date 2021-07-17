@@ -1,0 +1,45 @@
+.area{
+    display: flex;
+    margin-right:1.5rem;
+    align-items: center;
+    background-color: greenyellow;
+    border-radius: 0.2rem;
+    height: 2rem;
+}
+
+.filterSection{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    height: 2.1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    top : -13.5vh;
+    box-shadow:2.5px 2.5px 5px #8e9493;
+}
+
+
+.filterName{
+    padding:0.5rem;
+    color: white;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+.button{
+    border:none;
+    border-radius: 0.2rem;
+    color: black;
+    box-shadow:none;
+    height: 2rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    color:white;
+    background-color: black;
+}
