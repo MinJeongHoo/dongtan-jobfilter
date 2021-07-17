@@ -13,7 +13,7 @@ const FilterSection = ({selectedList}:SelectedListType) => {
     const setSelectedList = useSetRecoilState(selectedSkillList);
     
     const removeFilterValue=(event : React.MouseEvent<HTMLButtonElement>)=>{
-        const target :HTMLInputElement = event.target;
+        const target :EventTarget = event.target;
         const filterName = target.parentNode.getAttribute("id");
         //console.log(filterName);
         const newSelectedList = selectedList.filter(value=>{
