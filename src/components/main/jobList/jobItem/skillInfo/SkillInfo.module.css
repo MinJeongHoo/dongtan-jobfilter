@@ -5,6 +5,12 @@
 
 .skillText{
     margin : 0.7rem;
+    background-color: darkcyan;
+    color:white;
+    padding : 0.5rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
 }
 
 .skillText:hover{

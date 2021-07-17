@@ -3,9 +3,8 @@ import { RecoilRoot } from 'recoil';
 import TopSection from './topSection/TopSection';
 import JobList from './jobList/JobListContainer';
 
-
-
 const MainContainer = () => {
+
   return (
     <RecoilRoot>
       <div>

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './JobList.module.css';
 import { useRecoilValue, useRecoilState } from 'recoil';
 import JobItem from './jobItem/JobItem'
 import { jobListState,selectedSkillList } from '../../../moduels/atom/jobState';
 import { getAsync } from '../../../moduels/selector/jobSelector';
+import FilterSection from './filterSection/FilterSection';
 
 const JobListContainer = () => {
   
@@ -12,6 +13,7 @@ const JobListContainer = () => {
   }
 
   const [jobLists, setJobList] = useRecoilState(jobListState);
+  const [originJobLists ,setOriginJobList] = useState([]);
   const selectedList = useRecoilValue(selectedSkillList);
   const getAsyncjobList = useRecoilValue(getAsync);
 
@@ -21,8 +23,7 @@ const JobListContainer = () => {
   }
   useEffect(() => {
     if(selectedList.length>0){
-      let newData = jobLists.filter((list:listType) => { 
-        console.log(list);
+      let newData = originJobLists.filter((list:listType) => { 
         return selectedList.every(skill => { 
           return list.filterList.includes(skill); 
         }); 
@@ -30,11 +31,14 @@ const JobListContainer = () => {
       setJobList(newData);
     }
     else{
+      setOriginJobList(getAsyncjobList);
       setJobList(getAsyncjobList);
     }
   },[selectedList]);
   return (
-    <article className={styles.main}>
+   
+    <article  className = {styles.main}>
+      {selectedList.length>0 && <FilterSection selectedList = {selectedList}/>}
       {jobLists && jobLists.map((job: jobType) => <JobItem key={job.id} item={job} />)}
     </article>
 
