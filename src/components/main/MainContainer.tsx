@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { RecoilRoot } from 'recoil';
 import TopSection from './topSection/TopSection';
 import JobList from './jobList/JobListContainer';
-import styles from './MainContainer.module.css';
+import LoadingSpinner from '../loadingSpiner/LoadingSpinner';
 
 const MainContainer = () => {
 
@@ -10,7 +10,7 @@ const MainContainer = () => {
     <RecoilRoot>
       <div>
         <TopSection />
-        <Suspense fallback={<div className={styles.loadingSpinner}></div>}>
+        <Suspense fallback={<LoadingSpinner/>}>
           <JobList />
         </Suspense>
       </div>
