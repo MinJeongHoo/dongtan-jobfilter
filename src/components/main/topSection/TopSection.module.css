@@ -1,8 +1,7 @@
 .topArea{
-    background-color:#8aeda8; 
+    background: rgb(213,138,237);
+    background: linear-gradient(180deg, rgba(213,138,237,1) 0%, rgba(138,181,237,1) 100%);
     width: 100%;
     height :25vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }

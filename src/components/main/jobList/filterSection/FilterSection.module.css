@@ -1,6 +1,7 @@
+
 .area{
     display: flex;
-    margin-right:1.5rem;
+    margin-right:1rem;
     align-items: center;
     background-color: greenyellow;
     border-radius: 0.2rem;
@@ -43,3 +44,20 @@
     color:white;
     background-color: black;
 }
+
+.clearButton{
+    position: absolute;
+    right: 1.5rem;
+    border: none;
+    background-color: lawngreen;
+    border-radius: 0.25rem;
+    color:white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.clearButton:hover{
+    cursor: pointer;
+    background-color: green;
+}
+

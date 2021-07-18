@@ -8,7 +8,7 @@ import FilterSection from './filterSection/FilterSection';
 
 const JobListContainer = () => {
   
-  type jobType = {
+  type JobType = {
     id: string,
   }
 
@@ -39,7 +39,7 @@ const JobListContainer = () => {
    
     <article  className = {styles.main}>
       {selectedList.length>0 && <FilterSection selectedList = {selectedList}/>}
-      {jobLists && jobLists.map((job: jobType) => <JobItem key={job.id} item={job} />)}
+      {jobLists && jobLists.map((job: JobType) => <JobItem key={job.id} item={job} />)}
     </article>
 
   )

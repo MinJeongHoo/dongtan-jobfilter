@@ -16,40 +16,7 @@
 
 
 
+## 4. 질문할거
 
-function listUp(event) {
-  const name = event.target.getAttribute('name');
-  if (!document.querySelector(`#filter-${name}`)) {
-    const li = document.createElement('li');
-    const button = document.createElement('button');
-    button.append('X');
-    li.append(name);
-    li.append(button);
-    li.setAttribute('id', `filter-${name}`);
-    filterArea.append(li);
-    filterSkills.push(name);
-    console.log(filterSkills);
-    filterData();
-  }
-}
-
-function removeSkil(event) {
-  if (event.target.tagName==='BUTTON') {
-    event.target.parentNode.remove();
-    filterSkills = filterSkills.filter((item) => {
-      if (`filter-${item}` !== event.target.parentNode.getAttribute('id')) {
-        return item
-      }
-    });
-    filterData();
-  }
-}
-
-function filterData() {
-  let newData = data.filter(({ skills }) => {
-    return filterSkills.every(skill => {
-      return skills.includes(skill);
-    });
-  })
-  return newData;
-}
+1.라이브러리 타입 파악이 힘든데 어떤식으로 하셨는지
+2.서스펜스 쓸때 이미지를 못가져 오는지

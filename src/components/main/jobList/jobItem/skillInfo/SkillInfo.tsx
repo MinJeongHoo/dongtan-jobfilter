@@ -11,7 +11,7 @@ type SkillType = {
 const SkillInfo = ({ filterList }: SkillType) => {
   const [selectedList , setSelectedList] = useRecoilState(selectedSkillList);
   const test  = (event: React.MouseEvent<HTMLButtonElement>)=> {
-    const target :HTMLInputElement = event.target;
+    const target :EventTarget = event.target;
     const filterName : string  = target.innerText;
     if(selectedList.includes(filterName)){
       return;
